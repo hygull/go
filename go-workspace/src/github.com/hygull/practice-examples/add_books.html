@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add Books</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body{
+      background: linear-gradient(navy,darkgreen,navy)
+    }
+    h1 {
+      color:lightgreen;
+    }
+    h2,label{
+      color:white;
+    }
+    button a{
+      color:white;
+      
+    }
+    button a:hover{
+      color:white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class='col-md-12 text-center'>
+    <h1>Add books... </h1>
+<h2>So just enter the following details... <br>It will be visible to your customers...</h2>
+    </div>
+  </div>
+  <form class="form-horizontal" method="post" action="/v1/library/books/add/new">
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Book name</label>
+      <div class="col-sm-10">
+        <input type="text" maxlength="50" class="form-control" name="book_name" id="book_name" placeholder="Enter book name">
+      </div>
+    </div>
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="price">Price</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" min="0" id="price" name="price" placeholder="Enter book price">
+      </div>
+    </div>
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="author">Author</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="author" name="author" placeholder="Enter author name" maxlength="50">
+      </div>
+    </div>
+
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="edition">Edition</label>
+      <div class="col-sm-10">
+        <input type="text" maxlength="" class="form-control" name="edition" id="edition" placeholder="Enter book's edition eg. 11.1, 12.03 etc" maxlength="50">
+      </div>
+    </div>
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="publication">Publication</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="publication" name="publication" placeholder="Enter publication name" maxlength="50">
+      </div>
+    </div>
+
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="availability">Availability</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="availability" name= "availability" maxlength="5" placeholder="Enter availabilty status" maxlength="50">
+      </div>
+    </div>
+
+     <div class="form-group"><!--New or Old selection-->
+      <label class="control-label col-sm-2" for="type">Type</label>
+      <div class="col-sm-10">
+       
+              <div class="radio">
+                <label><input type="radio" name="type" id="type" value="NEW">New</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="type" id="type" value="OLD">Old</label>
+              </div>
+      </div>
+    </div>
+
+     <div class="form-group">
+      <label  class="control-label col-sm-2" for="sel1">Select Category</label>
+      <div class="col-sm-10">
+      <select class="form-control" id="sel1" name="category">
+        <option>PROGRAMMING</option>
+        <option>POLITICAL</option>
+        <option>HISTORICAL</option> <!--I have to make it dynamic, this list field's names should come from database, so go to -->
+        <option>RELIGIONAL</option> <!--http://reinbach.com/golang-webapps-1.html-->
+      </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-success">Add</button>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button class="btn btn-primary"><a href='/v1/library/books/admin/console'>Back to Admin console</a></button>
+      </div>
+    </div>
+
+  </form>
+</div>
+
+</body>
+</html>
+
