@@ -172,13 +172,13 @@ func newPostsDisplayerLimit10(rw http.ResponseWriter, req *http.Request) {
 		}
 		rows.Scan(&postedBy, &title, &message, &postedOn)
 		posts += "<div style='border:1px solid #eee8aa;border-top:15px solid #ffb4e5;'><h1>" +
-			title + "<h1><hr>" + "<h2>" + message + "</h2>" + "<h4>Posted by : " + postedBy + "</h4>" +
+			title + "</h1><hr>" + "<h2>" + message + "</h2>" + "<h4>Posted by : " + postedBy + "</h4>" +
 			"<h4>Posted on : " + postedOn + "</h4>" +
 			"</div>"
 	}
 	if found == false {
 		text := "No more posts are there"
-		text2 := "<h2 style='color:maroon'>0 posts found<h2>"
+		text2 := "<h2 style='color:maroon'>0 posts found</h2>"
 		fmt.Println(text)
 		rw.Write([]byte("<body bgcolor='#d2b48c'><center><h1 style='color:red;'>" + text + "</h1>" + text2 + "<a href='/high_goal/v1/account/login'>Retry</a></center></body>"))
 		return
