@@ -30,7 +30,7 @@ func showBookDetails(rw http.ResponseWriter, req *http.Request) {
 
 	fmt.Println("You want to see the details of '", bookName, "' ...Ok...wait...")
 
-	db, err := sql.Open("mysql", "root:admin@321@tcp(127.0.0.1:3306)/library")
+	db, err := sql.Open("mysql", "root:root321@tcp(127.0.0.1:3306)/library")
 	if err != nil {
 		fmt.Println("Error in connection with db")
 		return
@@ -84,7 +84,7 @@ func showBooks(rw http.ResponseWriter, req *http.Request) {
 	category := queryParams["category"]
 	fmt.Println("You want to see the ", category, " books...Ok...wait...")
 
-	db, err := sql.Open("mysql", "root:admin@321@tcp(127.0.0.1:3306)/library")
+	db, err := sql.Open("mysql", "root:root321@tcp(127.0.0.1:3306)/library")
 	if err != nil {
 		fmt.Println("Error in connection with db")
 		return
@@ -224,7 +224,7 @@ func addNewBooks(rw http.ResponseWriter, req *http.Request) { //DB Store
 		rw.Write([]byte("</h1 style='color:red'>All the fields are required</h1>"))
 		return
 	}
-	db, err := sql.Open("mysql", "root:admin@321@tcp(127.0.0.1:3306)/library")
+	db, err := sql.Open("mysql", "root:root321@tcp(127.0.0.1:3306)/library")
 	if err != nil {
 		fmt.Println("Error in connection with db")
 		return

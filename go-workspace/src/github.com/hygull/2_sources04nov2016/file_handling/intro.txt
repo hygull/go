@@ -1,0 +1,6 @@
+This is Golang.
+It is developed by Google.
+I like Robert Griesemer.
+I love Rob Pike.
+Ken Thompson is my favourite one.
+I like programmers.
