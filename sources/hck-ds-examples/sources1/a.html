@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <style type='text/css'>
+    #title{
+      color:lightgreen;
+    }
+    body{
+      background-color: white;
+    }
+    span#t1{
+      color:green;
+
+    }
+    span#t2{
+      color:orange;
+    }
+    #form_section{
+      margin-top: 10px;
+    }
+    a{
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class='container'>
+ 
+ <div class='row'>
+  <div class='col-sm-9 text-center'>
+  <h1 id='title'><span id='t1'>H</span><span id='t2'>y</span><span id='t1'>g</span><span id='t2'>u</span><span id='t1'>l</span><span id='t2'>l</span></h1>
+  <center>
+  <h2>Simple basics</h2>
+  <a href='https://gist.github.com/hygull/f8810d4f6e56bc4e2e277b33313ae9a0' target='_blank'>Operator precedence </a><br>
+   <a href='https://gist.github.com/hygull/564a67122f359d6b8f30193e37b28c8a' target='_blank'>3 different forms of for loop</a><br>
+    <a href='https://gist.github.com/hygull/0f7d8e3981d7690fbb4fcfd96a2df6b8' target='_blank'>Checking availability of keys in map</a><br>
+     <a href='https://gist.github.com/hygull/7d7ea0dc03ab51fceb673d2e3bad989f' target='_blank'>strconv (Converting a string to an int)</a><br>
+      <a href='https://gist.github.com/hygull/5470cdd04b084e78451d3360727ec4e4' target='_blank'>Pointer and memory allocation for an object  with new keyword</a><br>
+       <a href='https://gist.github.com/hygull/53792994c9f79e09d19ca5cf2bc7b853' target='_blank'>Marshalling an array of structs into JSON</a><br>
+        <a href='https://gist.github.com/hygull/d308d375b4d2a19bd087efc24d60b432' target='_blank'>Variable number of arguments</a><br>
+         <a href='https://gist.github.com/hygull/d74b65b70fca4a8971014e7b44689a72' target='_blank'>3 ways of using for loop with map</a><br>
+          <a href='https://gist.github.com/hygull/fb240bfafbd2077b702f67280e8bd1f9' target='_blank'>Printing system time and its decoration</a><br>
+           <a href='https://gist.github.com/hygull/b2ff9914c8504882929004776fed3471' target='_blank'>Splitting a string into list of words</a><br>
+  <center>
+  </div>
+  <div class='col-sm-3' id='form_section'>
+  <form class='form-horizontal' action='/v1/validate'>
+    <div class='form-group'>
+      <!-- <label class='control-label col-sm-2' for='email'>Email</label> -->
+      <div class='col-sm-offset-2  col-sm-10'>
+        <input type='email' class='form-control' id='email' placeholder='Enter email'>
+      </div>
+    </div>
+    <div class='form-group'>
+      <!-- <label class='control-label col-sm-2' for='pwd'>Password</label> -->
+      <div class='col-sm-offset-2  col-sm-10'>          
+        <input type='password' class='form-control' id='pwd' placeholder='Enter password'>
+      </div>
+    </div>
+    <div class='form-group'>        
+      <!-- <div class='col-sm-offset-2 col-sm-10'> -->
+      <div class='col-sm-offset-2 col-sm-10'>
+        <div class='checkbox'>
+          <label><input type='checkbox'> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class='form-group'>        
+      <div class='col-sm-offset-2 col-sm-10'>
+        <button type='submit' class='btn btn-default'>Submit</button>
+      </div>
+    </div>
+  </form>
+  </div><!--col2 end-->
+</div>
+
+</body>
+</html>

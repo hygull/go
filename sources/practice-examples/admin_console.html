@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    a{
+      color:white;
+      
+      font-family: tahoma;
+      font-size: 25px;
+    }
+    a:hover{
+      /*text-decoration: none;*/
+      color:white;
+      box-shadow: 2px 2px 2px black;
+    }
+    h1{
+      color:lightgreen;
+    }
+    h2{
+      color:#9e9da1;
+    }
+
+  </style>
+</head>
+<body style="background: navy">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center" id="links">
+    <h1>Admin Console</h1>
+    <h2>Just click</h2>
+
+     <div class="list-group">
+    <!-- <a href="#" class="list-group-item disabled">First item</a>
+    <a href="#" class="list-group-item">Second item</a>
+    <a href="#" class="list-group-item">Third item</a> -->
+  
+      <a href="/v1/library/books/fill/details" class="list-group-item">Add new book's details to database</a><br>
+      <a href="/v1/library/books/fill/category" class="list-group-item">Add new book's category to database</a><br> <!--Not implemented-->
+      <a href='/v1/library/books/programming' class="list-group-item">See all programming books</a><br>
+      <a href='/v1/library/books/political' class="list-group-item">See all political books</a><br>
+      <a href='/v1/library/books/historical' class="list-group-item">See all historical books</a><br>
+      <a href='/v1/library/books/religional' class="list-group-item">See all religional books</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,5 @@
+Hi friends, 
+
+
+The problem is available at https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/magical-word/
+ .For more information and detailed description about the problem. visit the above mentioned link.
